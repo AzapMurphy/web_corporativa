@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Formulario</title>
+</head>
+<body id="fondo1">
+    <form name="formulario" method="post" action="mailto:raul.rodriguez@proeducaglobal.com" autocomplete="on" target="_blank" enctype="multipart/form-data">
+        <fieldset>
+            <legend><h1 class="fuente-form1">Breaking Bad - Que comience el juego!</h1></legend>
+            <fieldset>
+                <legend class="fuente-form2">Datos Personales</legend>
+                <label>
+                    Nombre: <input type="text" name="nombre" placeholder="Introduce tu nombre...">
+                </label>
+                <br><br>
+                <label>
+                    Apellidos: <input type="text" name="apellidos" placeholder="Introduce tus apellidos...">
+                </label>
+                <br><br>
+                <label>
+                    DNI: <input type="text" name="dni" placeholder="Introduce tu DNI...">
+                </label>
+                <br><br>
+                <label>
+                    Correo Electrónico: <input type="email" placeholder="Ejemplo@...">
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend class="fuente-form2">Dirección Postal</legend>
+                <label>
+                    Calle: <input type="text" name="calle" placeholder="C/..."> 
+                </label>
+                <br><br>
+                <label>
+                    Número: <input type="text" name="numero" placeholder="Nº..."> 
+                </label>
+                <label>
+                    Piso: <input type="text" name="piso" placeholder="Ejemplo 1ª...">
+                </label>
+                <br><br>
+                <label>
+                    Código Postal: <input type="text" name="cp" placeholder="Introduce tu CP..."> 
+                </label>
+                <label>
+                    Ciudad: <input type="text" name="ciudad" placeholder="Población...">
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend class="fuente-form2">Sexo</legend>
+                <label>
+                    <input type="radio" id="hombre" name="sexo" value="H"> Hombre 
+                </label>
+                <label>
+                    <input type="radio" id="mujer" name="sexo" value="M"> Mujer
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend class="fuente-form2">Fecha de Nacimiento</legend>
+                <label>
+                    <input type="date" name="fecha" placeholder="Fecha de Nacimiento">
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend class="fuente-form2">Personajes</legend>
+                <label>
+                    Seleccione un personaje: 
+                    <select name="Personajes">
+                        <option value="1" selected>...</option>
+                        <option value="2">Jesse Pinkman</option>
+                        <option value="3">Walter White</option>
+                        <option value="4">Saul Goodman</option>
+                        <option value="5">Gustavo Fring</option>
+                        <option value="6">Pollos Hermanos</option>
+                        <option value="7">Otros Personajes</option>
+                    </select>
+                </label>
+            </fieldset>
+            <br><br>
+            <label>
+                <textarea name="Comentarios" cols="80" rows="10"
+                placeholder="Escribe aquí tu comentario..."></textarea>
+            </label>
+            <br><br>
+            <label>
+                <input type="submit" value="Enviar formulario">
+            </label>
+            <label>
+                <input type="reset" value="Borrar formulario">
+            </label>
+            <label>
+                <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple>
+            </label>
+            <br><br>
+        </fieldset>
+    </form>
+</body>
+</html>
